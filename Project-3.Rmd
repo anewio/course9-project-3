@@ -1,0 +1,25 @@
+---
+title: "Project 3"
+author: "jtang"
+date: "May 1, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Create an Interactive Plot using Plotly Package
+
+### Load Plotly library
+
+```{r warning=FALSE, message=FALSE}
+library(plotly)
+```
+
+### Build an Interactive Plot
+
+```{r echo=FALSE}
+p <- plot_ly(z = ~volcano, type = "surface")
+p
+```
